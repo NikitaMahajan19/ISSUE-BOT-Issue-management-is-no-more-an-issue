@@ -1,0 +1,39 @@
+{
+  "name": "issue_bot",
+  "version": "1.0.0",
+  "description": "issue_management_bot_for_mattermost",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "keywords": [
+    "mattermost",
+    "bot"
+  ],
+  "author": "Team 22 SE Spring 22",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.22.0",
+    "chalk": "^2.4.2",
+    "install": "^0.13.0",
+    "mattermost-client": "^6.5.0",
+    "mocha": "^9.2.1",
+    "package.json": "^2.0.1",
+    "parse-link-header": "^2.0.0",
+    "mongo-mock": "^4.1.0",
+	"got": "^10.0.0",
+    "underscore": "^1.8.3",
+    "mongoose": "^6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.ncsu.edu/csc510-s2022/CSC510-22"
+  },
+  "devDependencies": {
+    "c8": "^7.11.0",
+    "chai": "^4.3.6",
+    "mocha": "^9.2.1",
+	"nock": "^11.1.0",
+    "underscore": "^1.6.0"
+  }
+}

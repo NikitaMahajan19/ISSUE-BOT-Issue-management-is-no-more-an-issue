@@ -1,0 +1,144 @@
+Date: 03/21/2022
+
+Attendees
+
+Nikita Mahajan, Ishwari Zare, Rajesh Manedi, Nimalan Manimaran
+
+Agenda: 
+
+Item 1 including key discussions, decisions to be made, next steps to be done.
+Item 2 Made a Sprint Plan.
+Next steps: Working on Sprint 1
+
+Date: 03/22/2022
+Attendees
+
+Nikita Mahajan, Ishwari Zare, Rajesh Manedi, Nimalan Manimaran
+
+Agenda:
+
+Item 1 Developed Kanban Board
+Item 2 Assigned tasks to all the group members and created respective issues for the same.
+
+Next steps Woking on the tasks allotted and updating kanban board
+
+
+Date: 03/24/2022
+
+Attendees
+
+Nikita Mahajan, Ishwari Zare, Rajesh Manedi, Nimalan Manimaran
+
+Agenda:
+
+Item 1 Fixed the token after joining offfice hours. 
+Item 2 Fixed the readme to indicate the input dates as utc
+Next steps: Creating a database on mongodb.
+
+	        
+Date: 03/25/2022
+
+Attendees
+
+Nikita Mahajan, Ishwari Zare, Rajesh Manedi, Nimalan Manimaran
+
+Agenda:
+
+Item 1 Created a database using Mongodb on cloud.
+Item 2 Started fixing the bug issues for stale issues
+
+Next steps Successfully complete bug issues and start working with Async function of report generation.
+
+Date: 03/26/2022
+
+Attendees
+
+Nikita Mahajan, Ishwari Zare, Rajesh Manedi, Nimalan Manimaran
+
+Agenda:
+
+Item 1 Replaced the old mock database with new Mongodb database
+Item 2 Resolved the bug of stale issue
+Item 3 Started working for async function of report generation 
+Next steps Connecting database to github 
+
+
+Date: 03/27/2022
+
+Attendees
+
+Nikita Mahajan, Ishwari Zare, Rajesh Manedi, Nimalan Manimaran
+
+Agenda:
+
+Item 1 Resolved the async function
+Item 2 Connected the database to github
+
+Next steps Start with Sprint 2
+
+Date: 03/28/2022
+
+Attendees
+
+Nikita Mahajan, Ishwari Zare, Rajesh Manedi, Nimalan Manimaran
+
+Agenda:
+
+Item 1 Started with Sprint 2 tasks and made changes to the kanban board accordingly.
+Item 2 Include notify options for stale issues
+
+Next steps Successfully include list issue module in report generation code.
+
+
+Date: 03/29/2022
+
+Attendees
+
+Nikita Mahajan, Ishwari Zare, Rajesh Manedi, Nimalan Manimaran
+
+Agenda:
+
+Item 1 Changed the json format to match the variable list of issues received from github
+Item 2 Working on notify users
+Item 3 Included the list issue module in report generation
+Item 4 Major blockage observed with list issues only 30 issues are noticed, raised an issue 
+Next steps: Connecting the code to the database and modify the code to use these list of issues to generate the report.
+
+
+Date: 03/30/2022
+
+Attendees
+
+Nikita Mahajan, Ishwari Zare, Rajesh Manedi, Nimalan Manimaran
+
+Agenda:
+
+Item 1 Connected the code to the database
+Item 2 modified code to use these list of issues to generate the report to calculate based on all the issues which are open,closed. calculated based on number of pages.
+Item 3 Working on notify user of stale issue
+Next steps Implement the score calculation logic after issue assignment and Include logic for including the case where the issue opened before the time period and closed after the time period.
+
+Date: 03/31/2022
+
+Attendees
+
+Nikita Mahajan, Ishwari Zare, Rajesh Manedi, Nimalan Manimaran
+
+Agenda:
+
+Item 1 Implemented the notify user of stale issues
+Item 2 Started implementing logic of score calculation logic 
+Item 3 Implementing logic for report generation
+Next steps Completing items 2 and 3
+
+Date: 04/01/2022
+
+Attendees
+
+Nikita Mahajan, Ishwari Zare, Rajesh Manedi, Nimalan Manimaran
+
+Agenda:
+
+Item 1 Completed score calculation logic 
+Item 2  Implemented the logic for report generation
+Item 3  Do documentation and Presentation part 
