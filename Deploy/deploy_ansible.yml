@@ -1,0 +1,112 @@
+- hosts: node1
+  gather_facts: no
+  tasks:
+
+    - name: Update the libraries
+
+      command: apt-get update
+
+      become: yes
+
+
+
+    - name: Install python for executing playbook on target
+
+      apt:
+
+        name: python3
+
+        state: present
+
+        update_cache: yes
+
+      become: yes
+
+
+
+    - name: Checking/Installing the git on the target
+
+      apt:
+
+        name: git
+
+        state: latest
+
+        update_cache: yes
+
+      become: yes
+
+
+
+    - name: Set the required environmental variables
+
+      script: /home/rmanedi/env_var.sh
+
+      become: yes
+
+
+    - name: Fetching latest npm version
+
+      shell: curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+
+      become: yes
+
+
+    - name: Installing node and npm
+
+      command: sudo apt-get install -y nodejs
+
+      become: yes
+
+
+
+    - name: get github token
+
+      shell: echo $GITHUBTOKEN
+
+      become: true
+
+      register: gittoken
+
+
+
+    - name: Clone git repository
+
+      git:
+
+        repo: "https://{{gittoken.stdout}}@github.ncsu.edu/csc510-s2022/CSC510-22.git"
+
+        dest: "/CSC510-22"
+
+        clone: "yes"
+
+        update: "yes"
+
+        force: "yes"
+
+      become: yes
+
+
+
+    - name: Install forever package globally.
+      become: yes
+      community.general.npm:
+             name=forever
+             global="yes"
+             state=present
+
+    - name: Install npm packages
+
+      community.general.npm:
+
+            path="/CSC510-22"
+
+      become: yes
+
+
+
+    - name: Running the app
+
+      command: forever start /CSC510-22/index.js
+
+      become: yes

@@ -1,0 +1,40 @@
+  
+rmanedi@vm16-33:~$ ansible-playbook deploy_ansible.yml 
+
+PLAY [node1] *******************************************************************
+
+TASK [Update the libraries] ****************************************************
+changed: [152.7.176.80]
+
+TASK [Install python for executing playbook on target] *************************
+ok: [152.7.176.80]
+
+TASK [Checking/Installing the git on the target] *******************************
+ok: [152.7.176.80]
+
+TASK [Set the required environmental variables] ********************************
+changed: [152.7.176.80]
+
+TASK [Fetching latest npm version] *********************************************
+changed: [152.7.176.80]
+
+TASK [Installing node and npm] *************************************************
+changed: [152.7.176.80]
+
+TASK [get github token] ********************************************************
+changed: [152.7.176.80]
+
+TASK [Clone git repository] ****************************************************
+changed: [152.7.176.80]
+
+TASK [Install forever package globally.] ***************************************
+changed: [152.7.176.80]
+
+TASK [Install npm packages] ****************************************************
+changed: [152.7.176.80]
+
+TASK [Running the app] *********************************************************
+changed: [152.7.176.80]
+
+PLAY RECAP *********************************************************************
+152.7.176.80               : ok=11   changed=9    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
